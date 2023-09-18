@@ -9,11 +9,11 @@ package modelo;
  *
  * @author 2dam
  */
-public class ModelFactory {
-    
-    public static FileModelImplementation getFileModel(){
-        return new FileModelImplementation();
+public class TextViewImplementation implements InterfaceView{
+
+    @Override
+    public void showgreeting(String greeting) {
+        System.out.println(greeting);
     }
-    
     
 }

@@ -9,11 +9,8 @@ package modelo;
  *
  * @author 2dam
  */
-public class ModelFactory {
-    
-    public static FileModelImplementation getFileModel(){
-        return new FileModelImplementation();
+public class ViewFactory {
+    public static TextViewImplementation getView(){
+        return new TextViewImplementation();
     }
-    
-    
 }
