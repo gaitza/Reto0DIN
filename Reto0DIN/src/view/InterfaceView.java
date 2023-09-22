@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package view;
 
 /**
  *
  * @author 2dam
  */
-public interface InterfaceModel {
+public interface InterfaceView {
     
-    public String getgreeting();
+    public void showgreeting(String greeting);
     
 }

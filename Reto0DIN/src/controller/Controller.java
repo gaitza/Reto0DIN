@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controlador;
+package controller;
 
-import modelo.FileModelImplementation;
-import modelo.InterfaceModel;
-import modelo.InterfaceView;
-import modelo.ModelFactory;
+import model.FileModelImplementation;
+import model.InterfaceModel;
+import view.InterfaceView;
+import model.ModelFactory;
 
 /**
  *
@@ -16,7 +16,7 @@ import modelo.ModelFactory;
  */
 public class Controller {
     
-    public void run(InterfaceView view, InterfaceModel model){
+    public void run(InterfaceModel model, InterfaceView view){
       
         view.showgreeting(model.getgreeting());
     }

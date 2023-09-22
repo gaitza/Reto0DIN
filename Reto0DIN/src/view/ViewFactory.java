@@ -3,17 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package view;
 
 /**
  *
  * @author 2dam
  */
-public class TextViewImplementation implements InterfaceView{
-
-    @Override
-    public void showgreeting(String greeting) {
-        System.out.println(greeting);
+public class ViewFactory {
+    public static TextViewImplementation getView(){
+        return new TextViewImplementation();
     }
-    
 }

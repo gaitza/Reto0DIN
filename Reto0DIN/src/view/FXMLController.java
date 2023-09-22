@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package view;
 
 /**
  *
  * @author 2dam
  */
-public interface InterfaceView {
-    
-    public void showgreeting(String greeting);
+public class FXMLController {
     
 }

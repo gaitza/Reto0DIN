@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package model;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -17,7 +17,7 @@ public class FileModelImplementation implements InterfaceModel{
     @Override
     public String getgreeting() {
                 
-        ResourceBundle bundle = ResourceBundle.getBundle("modelo.PropertiesFile");
+        ResourceBundle bundle = ResourceBundle.getBundle("model.PropertiesFile");
         
         String saludo = bundle.getString("message");
         return saludo;
