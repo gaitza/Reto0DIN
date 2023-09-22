@@ -18,7 +18,7 @@ import view.ViewFactory;
  *
  * @author 2dam
  */
-public class Application extends javafx.application.Application {
+public class Application  {
 
     /**
      * @param args the command line arguments
@@ -34,19 +34,6 @@ public class Application extends javafx.application.Application {
      *
      * @param primaryStage
      */
-    @Override
-    public void start(Stage primaryStage) {
-       //Loas FXML view
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("view.fxml"));
-        Parent root=loader.load();
-        FXMLController viewController=loader.getController();
-        viewController.setGreeting(greeting);
-        //Create a Scene for view
-        Scene scene=new Scene(root);
-        //Put the view on Stage
-        primaryStage.setScene(scene);
-        //Show the Stage
-        primaryStage.showAndWait();
-    }
+   
     
 }
