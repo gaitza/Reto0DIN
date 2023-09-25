@@ -6,12 +6,8 @@
 package app;
 
 import controller.Controller;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 import model.ModelFactory;
-import view.FXMLController;
+
 import view.ViewFactory;
 
 /**
@@ -30,10 +26,4 @@ public class Application  {
                 //            ViewFactory,getView());
     }
 
-    /**
-     *
-     * @param primaryStage
-     */
-   
-    
 }

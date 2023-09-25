@@ -15,8 +15,8 @@ public class ModelFactory {
     
     public static InterfaceModel getFileModel(){
         String bundle = ResourceBundle.getBundle("app.option").getString("model");
-        
-        if (bundle.equals("file")) {
+       
+        if (bundle.equalsIgnoreCase("file")) {
            return new FileModelImplementation();
         } else {
             return new BDModelImplementation();

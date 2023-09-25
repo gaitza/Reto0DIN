@@ -5,12 +5,22 @@
  */
 package view;
 
+import java.util.ResourceBundle;
+import model.BDModelImplementation;
+import model.FileModelImplementation;
+
 /**
  *
  * @author 2dam
  */
 public class ViewFactory {
-    public static TextViewImplementation getView(){
-        return new TextViewImplementation();
+
+    public static InterfaceView getView() {
+        String bundle = ResourceBundle.getBundle("app.option").getString("view");
+        if (bundle.equalsIgnoreCase("text")) {
+            return new TextViewImplementation();
+        } else {
+            return new ViewImplementation();
+        }
     }
 }
