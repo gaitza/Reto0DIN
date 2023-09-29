@@ -7,7 +7,8 @@ package view;
 
 /**
  *
- * @author 2dam
+ * @author bayron
+ * Interfaz de la vista, asi como todos sus metodos.
  */
 public interface InterfaceView {
     

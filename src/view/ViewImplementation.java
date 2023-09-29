@@ -15,13 +15,22 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author 2dam
+ * @author bayron
+ * Implementacion de la interfaz, con todos sus metodos
  */
 public class ViewImplementation extends javafx.application.Application implements InterfaceView{
 
+    /**
+     * 
+     *Referencia al archivo FXML 
+     */
     @FXML 
     public TextField textfield_message;
-    
+    /**
+     * mensaje que recibe por parametro. Mostrandolo por consola.
+     * @throws java.lang.Exception
+     *Metodo para inicializar la ventana y lanzarla. Donde ejecutamos la ventana y le ponemos al textfield el dato del string greeting.
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
          //Loas FXML view

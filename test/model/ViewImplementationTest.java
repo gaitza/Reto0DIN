@@ -5,13 +5,11 @@
  */
 package model;
 
-import java.io.IOException;
+
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
+
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+
 import org.junit.Before;
 import org.junit.Test;
 import view.ViewImplementation;
@@ -50,8 +48,4 @@ public class ViewImplementationTest {
 
         assertEquals(mensaje, view.textfield_message.getText());
     }
-
-
-   
-
 }

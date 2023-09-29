@@ -7,7 +7,8 @@ package model;
 
 /**
  *
- * @author 2dam
+ * @author bayron
+ * Interface el modelo y sus metodos
  */
 public interface InterfaceModel {
     

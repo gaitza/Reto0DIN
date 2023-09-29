@@ -7,7 +7,8 @@ package model;
 
 /**
  *
- * @author 2dam
+ * @author bayron
+ * Clase Greeting con sus atributos y tus getters y setters.
  */
 public class Greeting {
     
