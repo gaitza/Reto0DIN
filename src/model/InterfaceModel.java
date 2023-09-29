@@ -3,17 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package model;
 
 /**
  *
  * @author 2dam
  */
-public class ModelFactory {
+public interface InterfaceModel {
     
-    public static FileModelImplementation getFileModel(){
-        return new FileModelImplementation();
-    }
-    
+    public String getgreeting();
     
 }
