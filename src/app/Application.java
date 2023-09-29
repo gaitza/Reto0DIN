@@ -21,7 +21,7 @@ public class Application  {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-          // Se crea una instancia de Controller y se llama al método "run" con un modelo de archivo y una vista.
+        // Se crea una instancia de Controller y se llama al método "run" con un modelo de archivo y una vista.
         new Controller().run(ModelFactory.getFileModel(), ViewFactory.getView());   
     }
 

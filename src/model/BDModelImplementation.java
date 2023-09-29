@@ -14,6 +14,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -37,20 +38,15 @@ public class BDModelImplementation implements InterfaceModel {
     public void abrirConexion() {
 
         try {
-            Properties configBDA = new Properties();
-            String rutaProyecto = System.getProperty("user.dir");
-            FileInputStream fis = new FileInputStream(rutaProyecto + "\\src\\model\\PropertiesBD.properties");
-            configBDA.load(fis);
 
-            final String URL = configBDA.getProperty("url");
-            final String USER = configBDA.getProperty("user");
-            final String PASSWORD = configBDA.getProperty("password");
+            String bundle = ResourceBundle.getBundle("model.PropertiesBD").getString("url");
+            String bundleUser = ResourceBundle.getBundle("model.PropertiesBD").getString("user");
+            String bundlePas = ResourceBundle.getBundle("model.PropertiesBD").getString("password");
 
+            final String URL = bundle;
+            final String USER = bundleUser;
+            final String PASSWORD = bundlePas;
             con = DriverManager.getConnection(URL, USER, PASSWORD);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(BDModelImplementation.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(BDModelImplementation.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
             Logger.getLogger(BDModelImplementation.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -78,6 +74,7 @@ public class BDModelImplementation implements InterfaceModel {
     /**
      * Metodo para recoger el saludo de la tabla en la base de datos.
      *
+     * @return
      */
     @Override
     public String getgreeting() {

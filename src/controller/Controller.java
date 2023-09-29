@@ -10,7 +10,8 @@ import view.InterfaceView;
 
 /**
  *
- * @author bayron Controlador encargado de lanzar la aplicacion 
+ * @author bayron 
+ * Controlador encargado de lanzar la aplicacion 
  */
 public class Controller {
 
