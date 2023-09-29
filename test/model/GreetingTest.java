@@ -18,7 +18,7 @@ public class GreetingTest {
     }
 
     /**
-     * Test of getValue method, of class Greeting
+     *
      */
     @Test
     public void testGetValue() {

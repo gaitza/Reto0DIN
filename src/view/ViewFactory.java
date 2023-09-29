@@ -11,10 +11,16 @@ import model.FileModelImplementation;
 
 /**
  *
- * @author 2dam
+ * @author bayron Factoria para construir la vista.
  */
 public class ViewFactory {
 
+    /**
+     *
+     * Metodo para construir una vista. Leyendo de un properties cual queremos
+     * construir, si la de texto(por consola) o la de ventana.
+     *
+     */
     public static InterfaceView getView() {
         String bundle = ResourceBundle.getBundle("app.option").getString("view");
         if (bundle.equalsIgnoreCase("text")) {

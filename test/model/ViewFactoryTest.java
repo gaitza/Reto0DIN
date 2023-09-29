@@ -1,12 +1,12 @@
 package model;
 
 import java.io.IOException;
-import java.util.ResourceBundle;
+
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import view.InterfaceView;
-import view.TextViewImplementation;
+
 import view.ViewFactory;
 
 public class ViewFactoryTest {

@@ -19,7 +19,8 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author 2dam
+ * @author bayron Implementacion de la base de datos donde realizamos la
+ * conexión la bda y las acciones sobre esta
  */
 public class BDModelImplementation implements InterfaceModel {
 
@@ -28,6 +29,11 @@ public class BDModelImplementation implements InterfaceModel {
 
     final private String get_greeting = "SELECT * FROM greeting";
 
+    /**
+     * Recogemos los datos necesarios para la conexión desde un properties y
+     * abrimos la conexion con la base de datos.
+     *
+     */
     public void abrirConexion() {
 
         try {
@@ -51,6 +57,11 @@ public class BDModelImplementation implements InterfaceModel {
 
     }
 
+    /**
+     * Cuando hemos terminado las operaciones cerramos la conexioón con la base
+     * de datos.
+     *
+     */
     public void cerrarConexion() {
         try {
             if (con != null) {
@@ -64,6 +75,10 @@ public class BDModelImplementation implements InterfaceModel {
         }
     }
 
+    /**
+     * Metodo para recoger el saludo de la tabla en la base de datos.
+     *
+     */
     @Override
     public String getgreeting() {
 

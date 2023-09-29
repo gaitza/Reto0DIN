@@ -10,10 +10,14 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author 2dam
+ * @author bayron
  */
 public class FileModelImplementation implements InterfaceModel{
 
+     /**
+      * Metodo para recoger el saludo del fichero.
+     * @return Un string con el saludo
+     */
     @Override
     public String getgreeting() {
                 

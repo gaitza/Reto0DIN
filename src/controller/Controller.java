@@ -5,20 +5,23 @@
  */
 package controller;
 
-import model.FileModelImplementation;
 import model.InterfaceModel;
 import view.InterfaceView;
-import model.ModelFactory;
 
 /**
  *
- * @author 2dam
+ * @author bayron Controlador encargado de lanzar la aplicacion 
  */
 public class Controller {
-    
-    public void run(InterfaceModel model, InterfaceView view){
-      
+
+    /**
+     * @param model La interfaz de modelo ya construido.
+     * @param view La interfaz de vista ya construida.
+     *
+     */
+    public void run(InterfaceModel model, InterfaceView view) {
+
         view.showgreeting(model.getgreeting());
     }
-    
+
 }
